@@ -550,7 +550,7 @@
  * Hotend Idle Timeout
  * Prevent filament in the nozzle from charring and causing a critical jam.
  */
-#define HOTEND_IDLE_TIMEOUT  // MRiscoC Disable heaters after timeout
+//#define HOTEND_IDLE_TIMEOUT  // MRiscoC Disable heaters after timeout
 #if ENABLED(HOTEND_IDLE_TIMEOUT)
   #define HOTEND_IDLE_TIMEOUT_SEC (10*60)    // (seconds) Time without extruder movement to trigger protection  // MRiscoC 10 minutes for heaters timeout
   #define HOTEND_IDLE_MIN_TRIGGER   150     // (°C) Minimum temperature to enable hotend protection  // MRiscoC set idle trigger lower than default EXTRUDE_MINTEMP
